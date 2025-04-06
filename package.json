@@ -1,0 +1,67 @@
+{
+  "name": "klassik",
+  "version": "1.0.0",
+  "author": "Henning Löwe",
+  "description": "A utility function for joining CSS class names.",
+  "keywords": [
+    "css",
+    "classname",
+    "utility",
+    "helper",
+    "typescript",
+    "lightweight",
+    "zero-dependencies"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "browser": "./dist/index.mjs",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewice/klassik.git"
+  },
+  "homepage": "https://github.com/ewice/klassik#readme",
+  "bugs": {
+    "url": "https://github.com/ewice/klassik/issues"
+  },
+  "scripts": {
+    "build": "tsup",
+    "format": "prettier --list-different --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --ext .ts,.js,.cjs,.mjs",
+    "test": "jest --passWithNoTests",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.3",
+    "@types/jest": "^29.5.14",
+    "conventional-changelog-conventionalcommits": "^8.0.0",
+    "esbuild": "^0.25.2",
+    "eslint": "^9.23.0",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3",
+    "semantic-release": "^24.2.3",
+    "ts-jest": "^29.3.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.0"
+  }
+}
